@@ -36,3 +36,7 @@ fun primesInRange(start: Int, end: Int): MutableList<Int> {
 
     return primes
 }
+
+fun sumOfPrimesInRange(start: Int, end: Int): Int {
+    return primesInRange(start, end).sum()
+}
