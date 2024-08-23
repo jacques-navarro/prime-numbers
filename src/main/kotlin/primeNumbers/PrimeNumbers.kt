@@ -24,3 +24,15 @@ fun nextPrime(number: Int): Int {
     }
     return number
 }
+
+fun primesInRange(start: Int, end: Int): MutableList<Int> {
+    val primes: MutableList<Int> = mutableListOf()
+
+    for (n in start..end) {
+        if (isPrime(n)) {
+            primes.add(n)
+        }
+    }
+
+    return primes
+}
