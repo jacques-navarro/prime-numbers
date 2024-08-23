@@ -15,3 +15,12 @@ fun isPrime(number: Int): Boolean {
     }
     return true
 }
+
+fun nextPrime(number: Int): Int {
+    for (n in number..Int.MAX_VALUE) {
+        if (isPrime(n)) {
+            return n
+        }
+    }
+    return number
+}
